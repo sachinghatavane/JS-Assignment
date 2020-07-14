@@ -1,0 +1,30 @@
+<html>
+    <head>
+        Current date  different format
+        <script>
+
+            function f1()
+            {  
+                var d=new Date();
+                var date=d. getDate();
+                var month=d. getMonth()+1;
+                var year=d. getFullYear();
+                var dateStr=date+"/" +month+"/" +year;
+                var s1=month+"-"+date+"-"+year;
+                var s2=date+"-"+month+"-"+year;
+                document.write("<b>Date Format</b><br>");
+                document.write(dateStr);
+                document.write("<br>");
+                document.write(s1);
+                document.write("<br>");
+                document.write(s2);
+                document.write("<br>");
+
+            }
+        </script>
+    <head>
+    <body>
+        <h1>Show Date</h1>
+        <button type="button" onClick="f1()">Show Date</button>
+    </body>
+</html>
